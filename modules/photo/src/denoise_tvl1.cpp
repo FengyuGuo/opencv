@@ -56,7 +56,7 @@ namespace cv{
 
     using std::transform;
 
-    void denoise_TVL1(const std::vector<Mat>& observations,Mat& result, double lambda, int niters){
+    void denoise_TVL1(const std::vector<Mat>& observations, CV_OUT Mat& result, double lambda, int niters){
 
         CV_Assert(observations.size()>0 && niters>0 && lambda>0);
 
